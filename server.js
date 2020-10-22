@@ -5,10 +5,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-// set static path
-//app.use(express.static(path.join(__dirname, "client")));
-
-// kluce vygenerovane v terminali: ./node_modules/.bin/web-push generate-vapid-keys
+// kluce vygenerovane v terminali: ./node_modules/.bin/web-push generate-vapid-keys - treba predtym nainstalovat webpush
 // sluzia na identifikaciu toho, komu sa posielaju push notifikacie
 // tento public kluc je pouzity aj vo frontende - service-worker pri subscribe
 const publicVapidKey = "BGOEJ3Rf9--QkRRZqx9bQP2WQhs-VPmMvg-mIgtvMl8vLa2l7eemlw3PUwgJMyWyy1S86TA7sxf7VKfyMrI0_A8";
